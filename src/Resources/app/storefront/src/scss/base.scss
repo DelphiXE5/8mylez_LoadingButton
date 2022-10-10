@@ -1,0 +1,52 @@
+.btn-buy.btn-loading {
+  background-color: grey;
+  border-color: rgb(141, 141, 141);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.btn-buy.btn-loading:focus {
+  box-shadow: 0 0 0 0.2rem rgba(145, 145, 145, 0.5);
+  background-color: grey;
+}
+
+.btn-buy.btn-loading:focus-visible {
+  outline: none;
+}
+
+.loader {
+  align-self: center;
+  margin-right: 10px;
+  border: 3px solid #ffffff00;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  border-right: 3px solid #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
