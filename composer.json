@@ -1,0 +1,19 @@
+{
+  "name": "swag/loading-button",
+  "description": "Loading Button - Shows a loading indicator for the 'add to cart' button",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "LoadingButton\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "LoadingButton\\LoadingButton",
+    "label": {
+      "de-DE": "Loading Button",
+      "en-GB": "Loading Button"
+    }
+  },
+  "version": "0.0.1"
+}
