@@ -1,1 +1,2 @@
-./src/Resources/app/storefront/dist/**/*
+.vscode
+/src/Resources/app/storefront/dist
