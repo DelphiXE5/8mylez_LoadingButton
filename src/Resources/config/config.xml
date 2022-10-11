@@ -6,9 +6,9 @@
         <title>Captions</title>
         <title lang="de-DE">Beschriftungen</title>
         <input-field type="text">
-            <id>loadingState</id>
-            <name>Loading state caption</name>
-            <name lang="de-DE">Beschriftung Ladezustand</name>
+            <name>loadingStateCaption</name>
+            <label>Loading State Caption</label>
+            <label lang="de-DE">Beschriftung Ladezustand</label>
         </input-field>
     </card>
 </config>
