@@ -1,5 +1,8 @@
+{# This is an ugly workaround to inject the data into the JS Plugin correctly. Should be probaply fixed by the Shopware developers based on: 
+  https://developer.shopware.com/docs/guides/plugins/plugins/storefront/add-custom-javascript#modify-existing-options #}
+
 {% sw_extends '@Storefront/storefront/page/product-detail/buy-widget-form.html.twig' %}
 
 {% block page_product_detail_buy_form_action %}
-{{ parent() }}" data-add-to-cart-options='{"loadingButtonConfig": "{{config('LoadingButton.config.loadingStateCaption')}}"}'
+{{ parent() }}" data-add-to-cart-options='{"loadingStateName": "{{'loadingButton.loadingStateName' | trans }}"}'
 {% endblock %}

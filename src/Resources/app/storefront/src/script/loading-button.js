@@ -6,7 +6,7 @@ export default class LoadingButtonPlugin extends AddToCart {
     super.init();
     this.cartButton = DomAccess.querySelector(this.el, ".btn-buy");
     this.buttonNormalState = this.cartButton.innerHTML;
-    this.loadingStateCaption = this.options.loadingButtonConfig || "Wird in den Warenkorb gelegt";
+    this.loadingStateCaption = this.options.loadingStateName || "Adding to shopping cart";
   }
 
   /**
@@ -14,14 +14,12 @@ export default class LoadingButtonPlugin extends AddToCart {
      * 
      * @param {string} requestUrl
      * @param {{}|FormData} formData
-     * @private
      */
-
   _openOffCanvasCarts(requestUrl, formData) {
 
     this.cartButton.classList.add("btn-loading");
     this.cartButton.innerHTML = `<div class="loader"></div><span></span>`;
-    
+
     // Using the textContent here to prevent malicious HTML from the config being rendered 
     DomAccess.querySelector(this.cartButton, "span").textContent = this.loadingStateCaption;
 

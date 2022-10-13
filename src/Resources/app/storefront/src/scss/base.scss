@@ -1,6 +1,9 @@
+$loading-button-plugin-button-loading-background: #808080 !default;
+$loading-button-plugin-button-loading-indicator: #fff !default;
+
 .btn-buy.btn-loading {
-  background-color: grey;
-  border-color: rgb(141, 141, 141);
+  background-color: $loading-button-plugin-button-loading-background;
+  border-color: $loading-button-plugin-button-loading-background;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -8,20 +11,21 @@
 
 .btn-buy.btn-loading:focus {
   box-shadow: 0 0 0 0.2rem rgba(145, 145, 145, 0.5);
-  background-color: grey;
+  background-color: $loading-button-plugin-button-loading-background;
 }
 
 .btn-buy.btn-loading:focus-visible {
   outline: none;
 }
 
+//make this responsive to the button size
 .loader {
   align-self: center;
   margin-right: 10px;
   border: 3px solid #ffffff00;
-  border-top: 3px solid #fff;
-  border-left: 3px solid #fff;
-  border-right: 3px solid #fff;
+  border-top: 3px solid $loading-button-plugin-button-loading-indicator;
+  border-left: 3px solid $loading-button-plugin-button-loading-indicator;
+  border-right: 3px solid $loading-button-plugin-button-loading-indicator;
   border-radius: 50%;
   width: 20px;
   height: 20px;

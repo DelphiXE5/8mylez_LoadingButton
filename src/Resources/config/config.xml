@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
 
-    <card>
-        <title>Captions</title>
-        <title lang="de-DE">Beschriftungen</title>
-        <input-field type="text">
-            <name>loadingStateCaption</name>
-            <label>Loading State Caption</label>
-            <label lang="de-DE">Beschriftung Ladezustand</label>
-        </input-field>
-    </card>
+  <card>
+    <title>Colors</title>
+    <title lang="de-DE">Farben</title>
+    <input-field type="colorpicker">
+      <name>loadingButtonPluginButtonLoadingBackground</name>
+      <label>Backgroundcolor loading state</label>
+      <label lang="de-DE">Hintergrundfarbe Ladezustand</label>
+      <css>loading-button-plugin-button-loading-background</css>
+      <defaultValue>#808080</defaultValue>
+    </input-field>
+    <input-field type="colorpicker">
+      <name>loadingButtonPluginButtonLoadingIndicator</name>
+      <label>Color loading indicator</label>
+      <label lang="de-DE">Farbe Ladeindikator</label>
+      <css>loading-button-plugin-button-loading-indicator</css>
+      <defaultValue>#ffffff</defaultValue>
+    </input-field>
+  </card>
 </config>
