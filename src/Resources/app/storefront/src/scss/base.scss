@@ -1,6 +1,9 @@
+// sass variables
 $loading-button-plugin-button-loading-background: #808080 !default;
 $loading-button-plugin-button-loading-indicator: #fff !default;
 
+
+// styling
 .btn-buy.btn-loading {
   background-color: $loading-button-plugin-button-loading-background;
   border-color: $loading-button-plugin-button-loading-background;
@@ -18,7 +21,11 @@ $loading-button-plugin-button-loading-indicator: #fff !default;
   outline: none;
 }
 
-//make this responsive to the button size
+/**
+* Loading indicator
+*/
+
+// This could be made more responsive to the button size if someone would use it one a styled button from a template
 .loader {
   align-self: center;
   margin-right: 10px;
